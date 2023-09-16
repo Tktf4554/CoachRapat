@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+height: 100vh;
+width: 100%;
+background-image: linear-gradient(130deg,#1abc9c,#2ecc71);
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+form.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  h2{
+    margin: 20px;
+    color: #fff;
+    font-weight: 300;
+    }
+input {
+  border: none;
+  height: 50px;
+  width: 250px;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: lrem;
+  outline: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: .5s;
+  cursor: pointer;
+  }
+.textbox {
+  color:#fff;
+  Background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+.textbox::placeholder{
+  color: #fff;
+  }
+.textbox:hover,
+.textbox:focus{
+  background: #fff;
+  width: 350px;
+  color:#1ac;
+  }
+.btn-submit {
+  background:#fff;
+  color: #1ac;
+  }
+.btn-submit:hover {
+  color:#fff;
+  background: #1ac;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+.btn-submit1 {
+  padding: 10px 100px; /* ปรับขนาดของปุ่มตามต้องการ */
+  border: 2px solid #000; /* เป็นกล่องสีเหลียมด้วยเส้นขอบ */
+  border-radius: 5px; /* ทำให้มีเส้นขอบเป็นรูปสี่เหลี่ยมมนต์ตำนาน */
+  background-color: #ffffff; /* สีพื้นหลัง */
+  color: #000000; /* สีข้อความภายในปุ่ม */
+  text-decoration: none; /* กำหนดให้ไม่มีขีดเส้นใต้ข้อความ */
+  font-size: 16px; /* ขนาดตัวอักษร */
+}
+
+.btn-submit1:hover {
+  background-color: #1ac; /* เปลี่ยนสีพื้นหลังเมื่อโฮเวอร์ปุ่ม */
+  color: #fff; /* เปลี่ยนสีข้อความเมื่อโฮเวอร์ปุ่ม */
+}
