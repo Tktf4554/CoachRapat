@@ -9,23 +9,35 @@
 </head>
 
 <body>
+  <script src="script.js"></script>
   
-<form class="container">
-<h2>Log in</h2>
-<input class="textbox" type="text" placeholder="Username">
-<input class="textbox" type="password" placeholder="Password">
-<input class="btn-submit" type="submit" value="Login">
-<button class="btn-submit1" onclick="redirectToSignup()">Signup</button> 
-</form>
+
+<div style="width: 270px; margin: 0 auto;"> <h1>Login:เรียนคอส</h1> <hr> <div> <div class="mb-3"> <input type="text" class="form-control" id="txt_username" placeholder="Username"> </div> <div class="mb-3"> <input type="password" class="form-control" id="txt_password" placeholder="Password"> </div> <div class="mb-3 form-check"> <input type="checkbox" class="form-check-input" id="txt_remember"> <label class="form-check-label" for="exampleCheck1">Remember me</label> </div> <button onclick="login()" class="btn btn-primary">Login</button> </div> 
+
+ <a href="https://www.facebook.com/coachrapat.thanaamornmongkon.9"> <h2 style="width: 89%; margin: 0 auto;">
+ทักแชทเพื่อจ่ายเงิน<br />
+    <h3 style="width: 130%; margin: 0 auto;">
+    (ในอนาคตอาจจะมีจ่ายเงินauto😅)
+    </h3>
+  </h2>
+ </a>
+</div>
+
 
 <script>
-  function redirectToSignup() {
-    // นำไปยังเว็บที่คุณต้องการเมื่อคลิก Signup
-    window.location.href = "https://chat.openai.com/c/93bcc61a-a360-4311-841b-27808dcb51ca"; // เปลี่ยน URL ตามที่คุณต้องการ
+  // ตรวจสอบว่าไม่มี kein_token ใน localStorage
+  if (!localStorage.getItem('kein_token')) {
+    // เพิ่ม kein_token ลงใน localStorage
+    localStorage.setItem('kein_token', 'your_token_value_here');
+  }
+
+  // ตรวจสอบว่าไม่มี keine_token2 ใน localStorage
+  if (!localStorage.getItem('keine_token2')) {
+    // เพิ่ม keine_token2 ลงใน localStorage
+    localStorage.setItem('keine_token2', 'your_token_value_for_keine_token2');
   }
 </script>
-  
-<script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
 </body>
 
 </html>
